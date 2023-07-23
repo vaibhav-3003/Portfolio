@@ -42,6 +42,10 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 #start_animation {
     position: absolute;
     top: 0;

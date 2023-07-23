@@ -34,6 +34,10 @@ img {
     user-select: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .reveal .parent {
     display: block;
     width: fit-content;

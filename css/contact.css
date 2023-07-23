@@ -28,6 +28,10 @@ a::selection {
     background-color: #242424;
 }
 
+a{
+    text-decoration: none;
+}
+
 .reveal .parent {
     display: block;
     width: fit-content;
