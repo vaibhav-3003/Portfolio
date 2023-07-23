@@ -58,6 +58,10 @@ p {
     font-family: 'Montserrat';
 }
 
+a{
+    text-decoration: none;
+}
+
 #about {
     display: flex;
     width: 100%;

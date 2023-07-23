@@ -43,7 +43,7 @@ function animateHomePage(){
       .from("#home #mobile-nav #links,#home #mobile-nav #copyright", {
         y: "-500%",
         duration: 1,
-        delay: -.2,
+        delay: -.8,
         stagger: 0.2,
       })
       .to("#home #main #about h1,#home #main #about p", {

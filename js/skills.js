@@ -5,8 +5,8 @@ function valueSetters() {
 function startAnimation() {
   var tl = gsap.timeline();
 
-  tl.to("#left,#right", {
-    width: 0,
+  tl.to("#start_animation", {
+    height: 0,
     duration: 2,
     delay: 0.5,
     ease: Expo.easeInOut,
