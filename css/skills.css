@@ -1,0 +1,350 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.reveal .parent {
+    display: block;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.reveal .parent .child {
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Cormorant', sans-serif;
+}
+
+h1 span::selection,
+h2 span::selection,
+h3 span::selection,
+p span::selection,
+a::selection {
+    background-color: #242424;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#left {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ECE7E1;
+    z-index: 9999;
+}
+
+#right {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ECE7E1;
+    z-index: 9999;
+}
+
+#skills {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #1A1818;
+}
+
+#skills #desktop-nav {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vw 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+    position: fixed;
+    left: 0;
+}
+
+#skills #desktop-nav #links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8vw;
+}
+
+#desktop-nav #links #line {
+    width: 7vw;
+    background-color: #ECE7E1;
+    height: 1px;
+    transform: rotate(-90deg);
+}
+
+#skills #desktop-nav ul li {
+    transform: rotate(-90deg);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: .3rem;
+    color: #ECE7E1;
+    list-style: none;
+}
+
+#skills #desktop-nav ul li a {
+    color: #ECE7E1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#skills #desktop-nav ul li a:hover {
+    text-decoration: line-through;
+}
+
+#skills #desktop-nav #copyright {
+    transform: rotate(-90deg);
+    font-size: .8rem;
+    color: #bebcb9;
+}
+
+#skills #mobile-nav {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vw 5vw;
+    position: absolute;
+    top: -100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+}
+
+#skills #mobile-nav #links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4vw;
+}
+
+#skills #mobile-nav ul li {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: .3rem;
+    color: #ECE7E1;
+    list-style: none;
+}
+
+#skills #mobile-nav ul li a {
+    color: #ECE7E1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#skills #mobile-nav ul li a:hover {
+    text-decoration: line-through;
+}
+
+#skills #mobile-nav #links ul {
+    display: flex;
+    gap: 3vw;
+}
+
+#mobile-nav #links #line {
+    width: 7vw;
+    background-color: #ECE7E1;
+    height: 2px;
+}
+
+#mobile-nav #copyright {
+    color: #ECE7E1;
+}
+
+#skills #main {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    padding: 2rem 4rem;
+    display: flex;
+}
+
+#skills #main #content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 3rem;
+}
+
+#main #text_animation {
+    width: 50%;
+    height: 100%;
+}
+
+#myCanvasContainer {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#text_animation p {
+    color: rgba(236, 231, 225, .6);
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+    text-align: center;
+}
+
+#text_animation #tags {
+    display: none;
+}
+
+#skills #content h2 {
+    font-family: 'Cormorant', sans-serif;
+    font-size: 12vw;
+    font-weight: 300;
+    color: #ECE7E1;
+}
+
+#skills #content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+    line-height: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    text-align: justify;
+    color: rgba(236, 231, 225, .6);
+    width: 90%;
+}
+
+#skills #content p a {
+    color: #ECE7E1;
+    text-decoration: underline;
+}
+
+#skills #content p a:hover {
+    text-decoration: line-through;
+}
+
+@media (max-width: 480px) {
+    #skills #desktop-nav {
+        position: absolute;
+        left: -100%;
+    }
+
+    #skills #mobile-nav {
+        position: sticky;
+        top: 0;
+    }
+
+    #skills {
+        flex-direction: column;
+    }
+
+    #skills #main {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    #skills #main #content {
+        width: 100%;
+        padding: 2rem 3rem;
+    }
+
+    #skills #main #text_animation {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #skills #desktop-nav {
+        position: absolute;
+        left: -100%;
+    }
+
+    #skills #mobile-nav {
+        position: sticky;
+        top: 0;
+    }
+
+    #skills {
+        flex-direction: column;
+    }
+
+    #skills #main {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    #skills #main #content {
+        width: 100%;
+        padding: 2rem 3rem;
+    }
+
+    #skills #main #text_animation {
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    #skills #desktop-nav {
+        position: absolute;
+        left: -100%;
+    }
+
+    #skills #mobile-nav {
+        position: sticky;
+        top: 0;
+    }
+
+    #skills {
+        flex-direction: column;
+    }
+
+    #skills #main {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    #skills #main #content {
+        width: 100%;
+        padding: 2rem 7rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #skills #main #text_animation {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
