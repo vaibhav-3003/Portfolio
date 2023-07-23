@@ -31,34 +31,32 @@ function animateSlider(){
       delay: 0.8,
       ease: Expo.easeInOut,
     })
-      .from("#about #desktop-nav #links,#about #desktop-nav #copyright", {
-        x: "-100%",
-        duration: 1,
-        stagger: 0.2,
-      })
-      .from("#about #mobile-nav #links,#about #mobile-nav #copyright", {
-        y: "-500%",
-        duration: 1,
-        delay: -0.2,
-        stagger: 0.2,
-      })
-      .to("#about .parent .child", {
-        y: 0,
-        stagger: 0.1,
-        duration: 2,
-        delay: -1.5,
-        ease: Expo.easeInOut,
-      })
-      .from("#about #main #image", {
-        opacity: 0,
-        duration: 1,
-        delay: -.8,
-        ease: Expo.easeInOut,
-      });
+      // .from("#about #desktop-nav #links,#about #desktop-nav #copyright", {
+      //   x: "-100%",
+      //   duration: 1,
+      //   stagger: 0.2,
+      // })
+      // .from("#about #mobile-nav #links,#about #mobile-nav #copyright", {
+      //   y: "-500%",
+      //   duration: 1,
+      //   delay: -0.2,
+      //   stagger: 0.2,
+      // })
+      // .to("#about .parent .child", {
+      //   y: 0,
+      //   stagger: 0.1,
+      //   duration: 2,
+      //   delay: -1.5,
+      //   ease: Expo.easeInOut,
+      // })
+      // .from("#about #main #image", {
+      //   opacity: 0,
+      //   duration: 1,
+      //   delay: -.8,
+      //   ease: Expo.easeInOut,
+      // });
 }
 
-console.log("hello world")
-
 revealToSpan()
-valueSetters()
+// valueSetters()
 animateSlider()
