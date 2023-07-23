@@ -58,7 +58,7 @@ p {
     font-family: 'Montserrat';
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -249,9 +249,8 @@ a{
     margin-bottom: 2rem;
 }
 
-#skills button {
-    width: 15vw;
-    height: 4.3vw;
+#skills a {
+    padding: 1rem 5rem;
     border: none;
     outline: none;
     background-color: #141414;
@@ -268,35 +267,32 @@ a{
     color: white;
 }
 
-#skills button:hover {
-    width: 20vw;
+#skills a:hover {
+    padding: 1rem 7rem;
 }
 
 #about #main #content #contact {
     padding: 2rem 0;
+    padding-bottom: 4rem;
 }
 
-#contact button {
-    width: 20vw;
-    height: 4.5vw;
+#contact a {
+    padding: 1rem 4.5rem;
     border: none;
     outline: none;
     background-color: #141414;
     color: white;
+    font-family: 'Cormorant';
+    font-size: 1.8vw;
+    letter-spacing: .3vw;
     border-radius: 40px;
     cursor: pointer;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 
-#contact button a {
-    font-family: 'Cormorant';
-    font-size: 1.8vw;
-    letter-spacing: .3vw;
-    color: white;
-}
 
-#contact button:hover {
-    width: 25vw;
+#contact a:hover {
+    padding: 1rem 6rem;
 }
 
 /* Media Query for Mobile Devices */
@@ -354,24 +350,22 @@ a{
         font-size: 6vw;
     }
 
-    #skills button {
-        width: 34vw;
-        height: 8vw;
-        font-size: 3vw;
+    #skills a {
+        padding: .8rem 4rem;
+        font-size: 5vw;
     }
 
-    #skills button:hover {
-        width: 40vw;
+    #skills a:hover {
+        padding: .8rem 5rem;
     }
 
-    #contact button {
-        width: 40vw;
-        height: 8vw;
-        font-size: 2vw;
+    #contact a {
+        padding: .8rem 4rem;
+        font-size: 5vw;
     }
 
-    #contact button:hover {
-        width: 44vw;
+    #contact a:hover {
+        padding: .8rem 5rem;
     }
 }
 
@@ -479,7 +473,7 @@ a{
     }
 
     #about #main #image img {
-        width: 50%;
+        width: 80%;
     }
 
     #about #main #content #skills h3,
