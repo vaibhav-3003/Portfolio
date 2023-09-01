@@ -34,7 +34,7 @@ img {
     user-select: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -264,6 +264,7 @@ a{
     background-size: cover;
     filter: grayscale();
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    object-fit: cover;
 }
 
 #content #project_links img:hover {
@@ -471,6 +472,10 @@ a{
         width: 100%;
         padding: 0;
     }
+
+    #content #project_links img {
+        filter: none;
+    }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
@@ -571,6 +576,10 @@ a{
         width: 100%;
         padding: 0;
     }
+
+    #content #project_links img {
+        filter: none;
+    }
 }
 
 /* Media Query for Tablets Ipads portrait mode */
@@ -662,5 +671,9 @@ a{
     #content #contact_info #contact_info--third #contact_link {
         width: 100%;
         padding: 0;
+    }
+
+    #content #project_links img {
+        filter: none;
     }
 }
