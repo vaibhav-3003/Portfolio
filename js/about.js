@@ -52,7 +52,7 @@ function animateSlider(){
       .from("#about #main #image", {
         opacity: 0,
         duration: 1,
-        delay: -.8,
+        delay: -.9,
         ease: Expo.easeInOut,
       });
 }
