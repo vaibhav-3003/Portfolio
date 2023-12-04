@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaibhav Mahajan — Projects</title>
     <link rel="stylesheet" href="/css/projects.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
 </head>
 <body>
     
@@ -40,6 +41,9 @@
                     <div id="line"></div>
                     <h2 class="reveal">Projects</h2>
                 </div>
+            </div>
+            <div id="scroll-animation_div">
+                <div id="scroll-animation"></div>
             </div>
 
             <div id="project_links">
@@ -108,6 +112,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
         integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+        // Load the animation
+        lottie.loadAnimation({
+            container: document.getElementById('scroll-animation'), // the dom element that will contain the animation
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '/assets/scrollDown.json' // the path to the animation json
+        });
+    </script>
 
     <script src="/js/projects.js"></script>
 

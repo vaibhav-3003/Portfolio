@@ -194,6 +194,17 @@ a {
     background-color: #141414;
 }
 
+#scroll-animation_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scroll-animation {
+    width: 4vw;
+}
+
 #projects #content {
     width: 100%;
     height: fit-content;
@@ -471,6 +482,10 @@ a {
     #content #project_links img {
         filter: none;
     }
+
+    #scroll-animation {
+        width: 10vw;
+    }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
@@ -670,5 +685,9 @@ a {
 
     #content #project_links img {
         filter: none;
+    }
+
+    #scroll-animation {
+        width: 6vw;
     }
 }
