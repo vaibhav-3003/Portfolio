@@ -55,6 +55,11 @@ function animation() {
       delay: -0.8,
       ease: Expo.easeInOut,
     })
+    .to("#projects #content #scroll-animation",{
+      opacity: 1,
+      duration: 1,
+      ease: Expo.easeInOut
+    })
     .to("#projects #content #project_links #first_two #img_container img", {
       scrollTrigger: {
         trigger: "#projects #content #project_links #first_two #img_container",

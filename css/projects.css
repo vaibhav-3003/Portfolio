@@ -203,6 +203,7 @@ a {
 
 #scroll-animation {
     width: 4vw;
+    opacity: 0;
 }
 
 #projects #content {
