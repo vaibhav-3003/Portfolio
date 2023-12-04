@@ -42,19 +42,20 @@ function animateSlider(){
         delay: -0.2,
         stagger: 0.2,
       })
-      .to("#about .parent .child", {
-        y: 0,
-        stagger: 0.1,
-        duration: 2,
-        delay: -1.5,
-        ease: Expo.easeInOut,
-      })
       .from("#about #main #image", {
         opacity: 0,
         duration: 1,
         delay: -.9,
         ease: Expo.easeInOut,
+      })
+      .to("#about .parent .child", {
+        y: 0,
+        stagger: 0.1,
+        duration: 2,
+        delay: -1.2,
+        ease: Expo.easeInOut,
       });
+      
 }
 
 revealToSpan()
